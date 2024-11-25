@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>한윤서</title>
+</head>
+<body>
+    <script>
+        function Person (gender, height) {
+            this.gender = gender;
+            this.height = height;
+            this.intro = function () {
+                document.write("My gender: " + this.gender + ", height: " + this.height + "<hr>");
+            }
+        };
+        let person1 = new Person("Man", 186);
+        let person2 = new Person("Woman", 149);
+        person1.intro();
+        person2.intro();
+    </script>
+</body>
+</html>
